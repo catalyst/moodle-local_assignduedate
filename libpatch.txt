@@ -1,0 +1,5 @@
+function assign_cm_info_view(cm_info $cm) {
+    global $CFG;
+    require_once($CFG->dirroot . '/local/assignduedate/lib.php');
+    local_assignduedate_assign_cm_info_view($cm);
+}
